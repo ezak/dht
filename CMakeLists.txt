@@ -5,9 +5,7 @@ set (CMAKE_C_FLAGS "-g -Wall")
 
 include_directories(.)
 
-add_library(${PROJECT_NAME} STATIC
-    dht.c
-)
+add_library(${PROJECT_NAME} STATIC dht.c )
 
 target_link_libraries(dht -lcrypt)
 
