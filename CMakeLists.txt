@@ -9,7 +9,7 @@ add_library(${PROJECT_NAME} STATIC
     dht.c
 )
 
-target_link_libraries(dht crypt)
+target_link_libraries(dht -lcrypt)
 
 install(TARGETS ${PROJECT_NAME} DESTINATION lib)
 install(FILES dht.h DESTINATION include/dht)
