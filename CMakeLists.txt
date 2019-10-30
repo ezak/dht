@@ -7,7 +7,6 @@ include_directories(.)
 
 add_library(${PROJECT_NAME} STATIC
     dht.c
-    ${${PROJECT_NAME}_ADD_SOURCES}
 )
 
 target_link_libraries(dht crypt)
